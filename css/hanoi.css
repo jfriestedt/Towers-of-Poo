@@ -1,0 +1,103 @@
+html, body, h1, section, figure, ul, li, p {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  height: 50px;
+  margin: 5px;
+}
+
+body {
+  font-family: arial;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.hanoi {
+}
+
+.pile {
+  display: inline-block;
+  width: 300px;
+  height: 170px;
+  border-bottom: 10px solid black;
+  margin: 10px;
+  position: relative;
+}
+
+.pile:hover {
+  cursor: pointer;
+  border-bottom: 10px solid blue;
+}
+
+.pile.over:hover {
+  cursor: default;
+  border-bottom: 10px solid black;
+}
+
+.pile.selected {
+  border-bottom: 10px solid red;
+}
+
+.game {
+  margin: auto;
+  width: 960px;
+}
+
+.disc {
+  display: block;
+  background: saddlebrown;
+  border-radius: 20px;
+  width: 250px;
+  height: 50px;
+  margin: 5px auto;
+  box-sizing: border-box;
+  top: 50px;
+}
+
+.big {
+  width: 70%;
+}
+
+.med {
+  width: 46%;
+}
+
+.sml {
+  width: 23%;
+  background-image: url(http://emojipedia-us.s3.amazonaws.com/cache/8c/65/8c65e5de808ec301754508366480250c.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+}
+
+.group:after {
+  content: "";
+  background: transparent;
+  clear: both;
+}
