@@ -65,7 +65,6 @@ HanoiView.prototype.clickTower = function () {
         this.game.move(this.fromPile, this.toPile);
       } catch (error) {
         alert(error.msg);
-        // return;
       }
 
       $($('.pile')[this.fromPile]).removeClass("selected");
