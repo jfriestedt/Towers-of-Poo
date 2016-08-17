@@ -208,7 +208,6 @@
 	Game.prototype.run = function(reader, gameCompletionCallback) {
 	    this.promptMove(reader, (startTowerIdx, endTowerIdx) => {
 	      if (!this.move(startTowerIdx, endTowerIdx)) {
-	        // throw function () { this.msg = 'invalid move'; }; // ????
 	        console.log("Invalid move!");
 	      }
 
