@@ -25,18 +25,10 @@ HanoiView.prototype.setupTowers = function () {
   this.render();
 };
 
-// HanoiView.prototype.setupDiscs = function () {
-//   const $firstPile = $(this.$el.children()[0]) ;
-//   $($firstPile.children()[0]).addClass("disc sml");
-//   $($firstPile.children()[1]).addClass("disc med");
-//   $($firstPile.children()[2]).addClass("disc big");
-// };
-
 HanoiView.prototype.render = function () {
   for (let tower = 0; tower < 3; tower++) {
     for (let i = 0; i < 3; i++) {
       let $disc = $($(this.$el.children()[tower]).children()[2 - i]);
-      // debugger
       $disc.removeClass('disc sml med big');
       switch (this.game.towers[tower][i]) {
         case 1:
